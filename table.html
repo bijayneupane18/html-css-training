@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        /* border: 1px solid black; */
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        border-collapse: collapse;
+      }
+      tr:nth-child(even),
+      td:nth-child(even),
+      th:nth-child(even) {
+        background-color: #d6eeee;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 100%">
+      <tr>
+        <th>first</th>
+        <td>1</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <th>second</th>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th>third</th>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <tr>
+        <th></th>
+        <th>Mon</th>
+        <th colspan="2">Tue</th>
+        <!-- <th>Wed</th> -->
+        <th>Thur</th>
+        <th>Fri</th>
+      </tr>
+      <tr>
+        <th rowspan="2">7:00</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <!-- <th>8:00</th> -->
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>9:00</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>10:00</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.container{
+    background-color: aqua;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+
+}
+
+.box1{
+    height: 60px;
+    width: 60px;
+    background-color: red;
+}
+.box2{
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+}
+.box3{
+    height: 60px;
+    width: 60px;
+    background-color: black;
+}
+.box4{
+    height: 60px;
+    width: 60px;
+    background-color: green;
+}
+.box5{
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+}

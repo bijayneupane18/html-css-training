@@ -1,0 +1,72 @@
+/* h1{
+    color: blue;
+}
+
+#demo{
+    color: blue;
+}
+
+.demo1{
+    color: blue;
+} */
+
+/* Group selector */
+ /* h1,#demo,.demo1{
+    color: blue;
+ } */
+
+ /* parent child selector */
+ /* .parent>.child>h1{
+    color: brown;
+ }
+
+ .parent .child h1{
+
+ } */
+
+ /* pseudo class selector */
+ .hover:hover{
+    background-color: blue;
+    color: white;
+ }
+ a:visited{
+    color: green;
+ }
+ .ac:active{
+    background-color: blue;
+ }
+ .line::before{
+    content: 'This is start ';
+    color: aqua;
+ }
+ .line::after{
+    content: 'this is end ';
+    background-color: blueviolet;
+ }
+
+ /* .rank p:first-child{
+    background-color: blue;
+ }
+ .rank p:last-child{
+    background-color: blueviolet;
+ }
+ .rank p:nth-child(2){
+    background-color: chartreuse;
+ } */
+ .rank p:nth-child(even){
+    background-color: blue;
+ }
+ .line1::first-line{
+    background-color: sienna;
+ }
+ .line1::first-letter{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+ }
+ ul li::marker{
+    color: red;
+ }
+.line1::selection{
+    background-color: brown;
+}

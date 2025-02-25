@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h3>Gender</h3> -->
+    <dialog id="dialog">
+    <form action="" method="dialog">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="first name" required><br><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="last name" required><br>
+        <br><br>
+        <input type="submit" value="submit" name="submit">
+
+        <!-- <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Femle</label>
+        <br>
+        <br>
+        <h3>Fruits</h3>
+        <input type="checkbox" id="apple">
+        <label for="apple">Apple</label>
+        <br>
+        <input type="checkbox" id="orange">
+        <label for="orange">Orange</label>
+        <br>
+        <input type="checkbox" id="banana">
+        <label for="banana">Banana</label>
+        <br>
+        <input type="checkbox" id="grapes">
+        <label for="grapes">Grapes</label>
+        <br> -->
+
+    </form>
+</dialog>
+<button onclick="formHandler()" >Open Form</button>
+<script>
+    function formHandler() {
+        var dialog = document.getElementById("dialog");
+        dialog.showModal();
+    }   
+
+</script>
+</body>
+</html>

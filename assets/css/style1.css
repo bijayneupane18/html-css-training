@@ -1,0 +1,20 @@
+.circle{
+    border: 1px solid black;
+    /* border-radius: 50%; */
+    height: 50px;
+    width: 50px;
+    /* outside shadow */
+    box-shadow: 1px 2px 10px 2px rgb(11, 11, 11);
+    /* inside shadow */
+    /* box-shadow:inset 1px 2px 10px 2px rgb(11, 11, 11); */
+
+    /* margin: 50px; */
+
+    /* padding: 20px; */
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px 10px 16px 8px; */
+
+}
