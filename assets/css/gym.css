@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 .navbar{
-    background: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
     padding: 10px 20px;
     color: white;
     position: fixed;
@@ -25,17 +25,19 @@ ul{
     width: 60%;
     text-transform: capitalize;
 }
-a{
+.sub-nav a{
     color: white;
     text-decoration: none;
 }
-li{
+.sub-nav li{
     letter-spacing: 2px;
     transition: transform 0.3s ease;
 }
-li:hover{
-    transform: scale(1.1);
-    cursor: pointer;
+.sub-nav a:hover{
+    color: #007bff;
+}
+.sub-nav li:hover{
+  transform: scale(1.1);
 }
 .logo{
     font-size: 40px;
@@ -118,7 +120,7 @@ button:hover{
   
   /* About Section */
   .about {
-    padding: 60px 20px;
+    padding: 80px 20px;
     /* background-color: #111; */
   }
   
@@ -149,7 +151,7 @@ button:hover{
   
   .about-content h2 {
     font-size: 36px;
-    color: #0b4e96; /* Blue */
+    color: #007bff; /* Blue */
   }
   
   .about-content p {
@@ -191,7 +193,7 @@ button:hover{
   /* Testimonials Section */
 .testimonials {
     background-color: #0a0a0a;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
   }
   .testimonial-container{
@@ -205,7 +207,7 @@ button:hover{
   
   .testimonials h2 {
     font-size: 36px;
-    color: #0b4e96; /* Blue */
+    color: #007bff; /* Blue */
     margin-bottom: 30px;
   }
   
@@ -251,5 +253,260 @@ button:hover{
       align-items: center;
     }
   }
+  /* Services Section */
+.services {
+  /* background-color: #0a0a0a; */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.services h2 {
+  font-size: 36px;
+  color: #007bff; /* Blue */
+  margin-bottom: 30px;
+}
+
+/* Services Container */
+.services-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual Service */
+.service {
+  /* background-color: #111; */
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 3px brown;
+  transition: 0.3s ease;
+  color: black;
+}
+
+.service img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  color: brown; /* Red */
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Hover Effect */
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px brown;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 90%;
+  }
+}
+
+/* Contact Section */
+.contact {
+  background-color: #0a0a0a;
+  padding: 80px 20px;
+  text-align: center;
+  color: #ddd;
+}
+.services-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact h2 {
+  font-size: 36px;
+  color: #007bff; /* Blue */
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.info {
+  background-color: #111;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  /* border: 1px solid brown; */
+}
+
+.info h3 {
+  color: brown; /* Red */
+  margin-bottom: 10px;
+}
+.info i{
+  color: rgb(224, 19, 19);
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Submit Button */
+.contact-form button {
+  padding: 12px;
+  background-color: brown; /* Red */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: rgb(184, 30, 30);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Footer Section */
+.footer {
+  background-color: #0a0a0a;
+  color: #ddd;
+  padding: 50px 20px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.footer-logo p {
+  font-size: 16px;
+}
+
+/* Footer Links */
+.footer-links h3, .footer-contact h3 {
+  color: brown; /* Red */
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.footer-links ul, .footer-contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 8px;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.footer-contact li{
+  display: flex;
+  gap: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #ddd;
+  transition: 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #007bff; /* Blue */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+
   
   
